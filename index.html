@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tradist | Innovation in Trade</title>
+  <meta name="description" content="Tradist Ltd offers accounting, UK local representative, e-commerce management and web services from London." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #1d4ed8;
+      --accent-2: #0ea5e9;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.6;
+    }
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, var(--bg), #1e293b 60%, #0f766e);
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      opacity: 0.95;
+    }
+    .hero {
+      padding: 72px 0 88px;
+      text-align: center;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      opacity: 0.85;
+      margin-bottom: 14px;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin: 0 0 18px;
+    }
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      color: #dbeafe;
+      font-size: 1.05rem;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+    .btn-primary {
+      background: white;
+      color: var(--bg);
+    }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.35);
+      color: white;
+    }
+    section { padding: 72px 0; }
+    .section-title {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+    .section-title h2 {
+      font-size: 2rem;
+      margin: 0 0 10px;
+    }
+    .section-title p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+    .card p { color: var(--muted); margin: 0; }
+    .about-box {
+      background: white;
+      border-radius: 22px;
+      padding: 34px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+    }
+    .about-box p {
+      margin-top: 0;
+      color: var(--muted);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .contact-item strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .contact-item a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    footer {
+      background: #e2e8f0;
+      padding: 26px 0;
+      color: #334155;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 640px) {
+      nav { justify-content: center; }
+      .hero { padding: 56px 0 72px; }
+      section { padding: 56px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Tradist Ltd</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <div class="hero" id="home">
+        <div class="eyebrow">Developing innovative strategies</div>
+        <h1>Achieving Growth</h1>
+        <p>
+          Tradist Ltd provides tailored business support from London, combining practical accounting services,
+          e-commerce guidance, UK local representation and web services for local and international clients.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#contact">Contact Us</a>
+          <a class="btn btn-secondary" href="#services">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Simple, practical and reliable support for growing businesses.</p>
+        </div>
+        <div class="services">
+          <div class="card">
+            <h3>Accountancy</h3>
+            <p>Accounting support focused on compliance, reporting and financial clarity for business owners.</p>
+          </div>
+          <div class="card">
+            <h3>UK Local Representative</h3>
+            <p>Support for businesses that need a reliable UK-based presence and local operational guidance.</p>
+          </div>
+          <div class="card">
+            <h3>E-Commerce Management</h3>
+            <p>Practical consultancy for online trading, digital growth and day-to-day e-commerce operations.</p>
+          </div>
+          <div class="card">
+            <h3>Web Services</h3>
+            <p>Business-focused website and online service solutions to strengthen your digital presence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Based in London and working with both local and international clients.</p>
+        </div>
+        <div class="about-box">
+          <p>
+            Nestled in the heart of London, Tradist Ltd has carved out a distinctive niche in the world of business services.
+            With a strong commitment to excellence, the firm offers bespoke accounting services and e-commerce consultancy
+            tailored to the unique requirements of both local and international clients.
+          </p>
+          <p>
+            As the UK business landscape continues to evolve in the digital age, Tradist Ltd brings contemporary knowledge,
+            practical insight and a solution-oriented approach to help businesses move forward with confidence.
+          </p>
+          <p>
+            The firm’s reputation is built on a holistic view of business needs: careful financial management, regulatory awareness,
+            and modern online growth strategies designed to improve visibility, customer experience and commercial performance.
+          </p>
+          <p style="margin-bottom:0;">
+            Work with Tradist Ltd to move ahead with precision, innovation and dependable business support.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>Get in touch to discuss your business needs.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="card contact-item">
+            <strong>Address</strong>
+            <div>4 Raven Road, London E18 1HB</div>
+          </div>
+          <div class="card contact-item">
+            <strong>Email</strong>
+            <div><a href="mailto:info@tradist.co.uk">info@tradist.co.uk</a></div>
+          </div>
+          <div class="card contact-item">
+            <strong>Telephone</strong>
+            <div><a href="tel:+442083066995">+44 20 830 66995</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2020 by Tradist Ltd - Company Register No: 12528749</div>
+  </footer>
+</body>
+</html>
