@@ -8,8 +8,6 @@ const company = {
   street2: 'Space Solutions Business Centre, Unit 8',
   city: 'Liverpool',
   postcode: 'L31 8BX',
-  phoneDisplay: '07810 812853',
-  phoneIntl: '+447810812853',
   email: 'info@tradist.co.uk',
   domain: 'https://tradist.co.uk',
   // Contact form service (e.g. Formspree). Replace YOUR_FORM_ID with the real form ID.

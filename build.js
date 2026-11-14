@@ -26,7 +26,6 @@ const jsonLd = {
   legalName: C.name,
   url: C.domain + '/',
   email: C.email,
-  telephone: C.phoneIntl,
   logo: C.domain + '/assets/img/tradist-logo.png',
   image: C.domain + '/assets/img/og-image.png',
   address: { '@type': 'PostalAddress', streetAddress: `${C.street1}, ${C.street2}`, addressLocality: C.city, postalCode: C.postcode, addressCountry: 'GB' },
@@ -101,7 +100,6 @@ function footer() {
 <div>
 <h2>Contact</h2>
 <ul>
-<li><a href="tel:${C.phoneIntl}">${C.phoneDisplay}</a></li>
 <li><a href="mailto:${C.email}">${C.email}</a></li>
 </ul>
 </div>
@@ -404,7 +402,6 @@ ${options}
 </form>
 <aside class="contact-aside" aria-label="Contact details">
 <div class="contact-card contact-card--ink"><p class="eyebrow">Write</p><a class="contact-card__value" href="mailto:${C.email}">${C.email}</a></div>
-<div class="contact-card"><p class="eyebrow">Call</p><a class="contact-card__value" href="tel:${C.phoneIntl}">${C.phoneDisplay}</a></div>
 <div class="contact-card"><p class="eyebrow">Visit</p><address>${C.street1}<br>${C.street2}<br>${C.city} ${C.postcode}</address>
 <p style="margin-top: 10px;"><a href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(addressInline)}" rel="noopener">Open in maps ↗</a></p></div>
 </aside>
@@ -438,7 +435,7 @@ ${options}
 </script>`;
   write('contact/index.html', layout({
     title: 'Contact — Tradist, Accountants in Liverpool',
-    desc: `Contact Tradist: ${C.phoneDisplay}, ${C.email}. ${addressInline}.`,
+    desc: `Contact Tradist: ${C.email}. ${addressInline}.`,
     pathname: '/contact/', body, current: 'contact',
   }));
 }
@@ -448,7 +445,7 @@ function thanks() {
 <div class="wrap">
 <p class="kicker">Message received</p>
 <h1 class="display hero__title" style="font-size: clamp(44px, 9vw, 120px);">Thank<br><span class="serif-i accent">you.</span></h1>
-<p class="hero__lede" style="margin-top: 28px;">We’ve got your message and will be in touch soon. If it’s urgent, call us on <a href="tel:${C.phoneIntl}">${C.phoneDisplay}</a>.</p>
+<p class="hero__lede" style="margin-top: 28px;">We’ve got your message and will be in touch soon. If it’s urgent, email us at <a href="mailto:${C.email}">${C.email}</a>.</p>
 <div class="btn-row" style="margin-top: 32px;"><a class="btn btn--ink" href="/">Back to home</a></div>
 </div>
 </section>`;
@@ -479,7 +476,7 @@ function privacy() {
 <p><strong>Last updated:</strong> November 2026</p>
 <h2>Who we are</h2>
 <p>This website is run by ${C.name} (“Tradist”, “we”, “us”), a company registered in England &amp; Wales, company number ${C.number}, registered office ${addressInline}. We are the controller of the personal data described in this notice.</p>
-<p>You can contact us about your data at <a href="mailto:${C.email}">${C.email}</a> or on ${C.phoneDisplay}.</p>
+<p>You can contact us about your data at <a href="mailto:${C.email}">${C.email}</a>.</p>
 <h2>What we collect</h2>
 <p>When you use our contact form or email or call us, we collect the details you give us: usually your name, email address, phone number, the service you are interested in and your message.</p>
 <p>If you become a client, we collect the information needed to provide our services, such as financial records, tax references and identity documents. This is covered by our engagement letter.</p>
